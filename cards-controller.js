@@ -15,7 +15,7 @@ function CardsController() {
       var marvelCharacters = dataStore.getMarvelCharacters()
       var myCharacters = dataStore.getMyCharacters()
 
-     
+      if(myCharacters.length >= 6) return console.warn("You already have 6 marvel characters, you must destroy some of them to add more!");
       dataStore.addToMyCharacters(characterID)
       draw(marvelCharacters, myCharacters)
     }

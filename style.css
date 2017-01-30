@@ -1,5 +1,10 @@
 .flexy {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-content: center;
+    background-color: sandybrown;
+}
+
+.card {
+    min-width: 100px;
 }

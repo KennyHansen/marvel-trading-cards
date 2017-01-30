@@ -18,7 +18,6 @@ function MarvelService(){
   this.addToMyCharacters = function(id){
     //in order to add a character to your list you will first need to find 
     //the character by its id in the marvelCharacters array
-    debugger
     marvelCharacters.forEach((p,i) => {
       if(p.id == id) {
         marvelCharacters.splice(i, 1)
